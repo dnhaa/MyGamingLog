@@ -9,23 +9,32 @@
 	height: 30px;
 }
 .heading2{
-	width: 80%;
+	width: 70%;
 	float: right;
+}
+.heading1 i{
+	margin-right: 9px;
 }
 .heading2 ul{	
 	list-style: none;
+	float: right;
 }
 .heading1{
-	width: 20%;
+	width: 28%;
 	float: left;
 }
 .heading2 ul li{
-	float: right;
+	float: left;
 	margin-right: 27px;
 	cursor: pointer;
+	transition: 0.3s;
+}
+.heading2 ul li:hover{
+	text-decoration: underline;
+	background-color: #462a52;
+	font-weight: bold;
 }
 .my-genshin-log{
-
 	width: 100%;
 }
 .my-genshin-log h1{
@@ -34,10 +43,8 @@
 	text-align: center;
 	font-size: 70px;
 	line-height: 70%;
-
-
+	font-weight: bold;
 }
-
 .responsive {
   width: 100%;
   height: auto;
@@ -53,11 +60,43 @@
 }
 .my-genshin-log button{
 	width: 200px;
-	padding: 10px 30px;
+	height: 45px;
 	background-color: #FEECFA;
 	color: #4B2B51;
 	border-radius: 20px;
-	font-weight: bold;
 	cursor: pointer;
+	transition: 0.3s;
+}
+.my-genshin-log button:hover{
+	background-color: #4B2B51;
+	color: #FEECFA;
+	font-weight: bold;
+}
+.about h1{
+	font-size: 2.1vw;
+	margin-top: 50px;
+}
+.character h1{
+	font-size: 2.1vw;
+	margin-top: 70px;
+}
 
+table{
+	margin-left:auto;
+	margin-right:auto; 
+	border-collapse: collapse;
+}
+table tr td{
+	padding: 10px 0px;
+	width: 500px;
+	border-bottom: 3px solid #FEECFA;
+	transition: 0.3s;
+}
+table tr td:first-child{	
+	text-align: left;
+	width: 200px;
+}
+/*tr: hover td because tr: hover only doesn't work for old browsers*/
+table tr:hover td{
+	background-color: #4B2B51;
 }
