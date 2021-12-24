@@ -1,0 +1,63 @@
+*{
+	background-color: #06030A;
+	color: #FEECFA;
+	font-family: 'Montserrat';
+	font-size: 1.7vw;
+	text-align: center;
+}
+.heading{
+	height: 30px;
+}
+.heading2{
+	width: 80%;
+	float: right;
+}
+.heading2 ul{	
+	list-style: none;
+}
+.heading1{
+	width: 20%;
+	float: left;
+}
+.heading2 ul li{
+	float: right;
+	margin-right: 27px;
+	cursor: pointer;
+}
+.my-genshin-log{
+
+	width: 100%;
+}
+.my-genshin-log h1{
+	padding-top: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 70px;
+	line-height: 70%;
+
+
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  
+}
+
+.btn{
+	float: left;
+	padding: 12px 16px;
+	border: none;
+	color: #FEECFA;
+	cursor: pointer;
+}
+.my-genshin-log button{
+	width: 200px;
+	padding: 10px 30px;
+	background-color: #FEECFA;
+	color: #4B2B51;
+	border-radius: 20px;
+	font-weight: bold;
+	cursor: pointer;
+
+}
