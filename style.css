@@ -1,5 +1,10 @@
-*{
+html {
+  scroll-behavior: smooth;
+}
+body{
 	background-color: #06030A;
+}
+*{
 	color: #FEECFA;
 	font-family: 'Montserrat';
 	font-size: 1.7vw;
@@ -11,6 +16,9 @@
 .heading2{
 	width: 70%;
 	float: right;
+}
+.heading2 a{
+	text-decoration: none;
 }
 .heading1 i{
 	margin-right: 9px;
@@ -52,6 +60,7 @@
 }
 
 .btn{
+	background-color: #06030A;
 	float: left;
 	padding: 12px 16px;
 	border: none;
@@ -99,4 +108,97 @@ table tr td:first-child{
 /*tr: hover td because tr: hover only doesn't work for old browsers*/
 table tr:hover td{
 	background-color: #4B2B51;
+}
+.character table{
+	margin-bottom: 70px;
+}
+.container{
+	width: 100%;
+	height: 55vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+}
+.box{
+	width: 350px;
+	height: 50vh;
+	background-color: #4B2B51;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin-right: 20px 10px;
+}
+.box img{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;	
+}
+.box h2, p, a{
+	font-size: 15px;
+
+}
+
+.container li{
+	list-style: none;
+}
+.blog input{
+	height: 30px;
+	width: 300px;
+	border-radius: 8px;
+	font-size: 15px;
+	margin-bottom: 10px;
+	color: #4B2B51;
+}
+.sendBtn{
+	height: 32px;
+	width: 50px;
+	border-radius: 8px;
+	font-size: 15px;
+	background-color: #4b2b51;
+	color: #feecfa;
+}
+.sendBtn:hover{
+	cursor: pointer;
+}
+.blog h1{
+	font-size: 2.1vw;
+}
+.contact h1{
+	font-size: 2.1vw;
+}
+.footer{
+	margin-top: 30px;
+	display: flex;
+
+}
+.contact--left{
+	padding-left: 20px;
+	width: 60%;
+	float: left;
+	text-align: left;
+}
+.contact--left input{
+	margin-bottom: 10px;
+	width: 300px;
+	height: 30px;
+	color: #4B2B51;
+	text-align: left;
+}
+
+.contact--right{
+	display: flex;
+	width: 40%;
+	float: right;
+	flex-direction: column;
+	align-content: center;
+}
+.contact--right button a{
+	padding: 10px;
+	transition: 0.3s ease-out;
+}
+.contact--right button a:hover{
+	cursor: pointer;
 }

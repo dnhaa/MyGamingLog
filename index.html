@@ -6,6 +6,16 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	 <link type="text/css" rel="stylesheet" href="lightslider.css" />                  
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script src="lightslider.js"></script>
+		
+
+
+
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
 </head>
@@ -18,10 +28,10 @@
 		</div >
 		<div class="heading2">
 			<ul>
-				<li>About</li>
-				<li>Character</li>
-				<li>Blog</li>
-				<li>Contact</li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#character">Character</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 		
@@ -34,7 +44,7 @@
 	<div class="inazuma-image">
 		<img src="img/purple.jpg" alt="inazuma scenery" class="responsive">
 	</div>
-	<div class="about">
+	<div class="about" id="about">
 		<h1>About Me</h1>
 		<p>Hi, it's Ha! This is a log for my great Genshin journey and coding experience. Tag along!</p>
 		<p>Avid Genshin Gamer | Content Creator | Software Engineering Student</p>
@@ -62,7 +72,7 @@
 		</table>
 
 	</div>
-	<div class="character">
+	<div class="character" id="character">
 		<h1>My Characters</h1>
 		<p>My most favourite characters are Albedo, Mona and Hu Tao!</p>
 		<p>Zhongli is my first 5-star.</p>
@@ -93,11 +103,101 @@
 			</tr>
 		</table>
 	</div>
-	<div class="blog">
+	<div class="blog" id="blog">
+		<h1>My Blog</h1>
+		<p>My honest opinion on certain topics. Tell me what you want to see next!</p>
+		<input type="text" id="characterName" placeholder="Enter a topic">
+		<span>
+			<button class="sendBtn" onclick="characterSubmit()">Send</button>
+		</span>
+		<div class="container">
+			<ul id="autoWidth" class="cs-hidden">
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<a href="https://genshin-impact.fandom.com/wiki/Albedo">Show me the truth and the meaning of this world.</a>
+						<br>
+					</div>
+				</li>
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<p>Show me the truth and the meaning of this world.</p>
+					</div>
+				</li>	
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<p>Show me the truth and the meaning of this world.</p>
+					</div>
+				</li>	
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<p>Show me the truth and the meaning of this world.</p>
+					</div>
+				</li>	
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<p>Show me the truth and the meaning of this world.</p>
+					</div>
+				</li>
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<p>Show me the truth and the meaning of this world.</p>
+					</div>
+				</li>
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<p>Show me the truth and the meaning of this world.</p>
+					</div>
+				</li>
+				<li class="item-a">
+					<div class="box">
+						<img src="img/genshin-impact-albedo-nov.jpg">
+						<h2>Albedo Kreideprinz</h2>
+						<p>Show me the truth and the meaning of this world.</p>
+					</div>
+				</li>	
+			</ul>
+		</div>
+		<p>Click to read.</p>
+	</div>
+
+	<div class="contact" id="contact">
+		<h1>Contact Me</h1>
+		<div class="footer">
+			<div class="contact--left">
+				<input type="text" placeholder="Your name" id="name"><br>
+				<input type="text" placeholder="Email" id="email"><br>
+				<input type="textarea" placeholder="Message" id="message"><br>
+				<button class="sendBtn" onclick="sendForm()">Send</button>
+			</div>
+			<div class="contact--right">
+				<p>Ho Chi Minh, VN</p>
+				<p>elnganha@gmail.com</p>
+				<button class="btn">
+					<a href="https://www.instagram.com/dn__ha/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/ngan-ha-do-a0a4a1148/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.facebook.com/elnganha/"><i class="fa fa-facebook-f"></i></a>
+					<a href="https://github.com/dnhaa"><i class="fa fa-github"></i></a>
+				</button>
+			</div>
+		</div>
 		
 	</div>
-	<div class="contact">
-		
-	</div>
+	<script type="text/javascript" src="code.js"></script>
 </body>
+
+
 </html>
